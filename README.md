@@ -11,6 +11,18 @@ To get setup, run:
 nvm use && npm i
 ```
 
+## Using the converter
+
+You can include `converter.js` in your own code, and call it as shown:
+
+```
+const romanNumber = require('./converter')
+
+const conversion1 = romanNumber(1) // returns object with `toString` and `toInt` functions
+console.log(conversion1.toString()) // returns `I`
+console.log(conversion1.toInt()) // returns `1`
+```
+
 ## Tests
 
 The tests are written with mocha and use Chai for assertions.
