@@ -1,0 +1,24 @@
+{
+  "name": "kodify-technical-test",
+  "version": "1.0.0",
+  "description": "Convert roman numerals to arabic numerals + vice versa",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha test/unit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DuncanFenning93/kodify-technical-test.git"
+  },
+  "author": "Duncan Fenning",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DuncanFenning93/kodify-technical-test/issues"
+  },
+  "homepage": "https://github.com/DuncanFenning93/kodify-technical-test#readme",
+  "dependencies": {
+    "chai": "^4.1.2",
+    "dirty-chai": "^2.0.1",
+    "mocha": "^5.0.5"
+  }
+}
