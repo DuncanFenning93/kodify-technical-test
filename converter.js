@@ -32,7 +32,16 @@ const converter = module.exports = (value) => {
 }
 
 converter._convertToArabicNumeral = (romanNumeral) => {
-  return romanNumeral
+  let total = 0
+  let index = romanNumeral.length
+  while (index--) {
+    if (map[romanNumeral[index]] < map[romanNumeral[index + 1]]) {
+      total -= map[romanNumeral[index]]
+    } else {
+      total += map[romanNumeral[index]]
+    }
+  }
+  return total
 }
 
 converter._convertToRomanNumeral = (arabicNumeral) => {
