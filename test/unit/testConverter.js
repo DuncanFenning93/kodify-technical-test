@@ -1,7 +1,6 @@
 const converter = require('../../converter')
 
 describe('test converter', () => {
-
   context('with invalid values', () => {
     context('with a null value', () => {
       it('throws value required exception', () => {
@@ -58,7 +57,6 @@ describe('test converter', () => {
       })
     })
   })
-
   context('with a roman numeral', () => {
     context('with value `I`', () => {
       it('returns `1`', () => {
@@ -117,7 +115,6 @@ describe('test converter', () => {
       })
     })
   })
-
   context('with an arabic numeral', () => {
     context('with value `1`', () => {
       it('returns `I`', () => {
@@ -169,5 +166,4 @@ describe('test converter', () => {
       })
     })
   })
-
 })
